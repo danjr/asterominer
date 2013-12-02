@@ -1,0 +1,254 @@
+
+
+* {
+}
+
+body {
+	min-width: 800px;
+	font-family: "Arial", Helvetica, sans-serif;
+	color: rgba(32, 32, 32, 1);
+	text-shadow: 0 0 2px rgba(255, 255, 255, 1);
+	/*background: url('resources/images/starfield.png');*/
+	background-color: rgba(255, 255, 255, 1);
+	opacity: 1;
+}
+
+h1 {
+	font-size: 14px;
+}
+
+h2 {
+	font-size: 14px;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+div {
+	border-radius: 5px;
+}
+
+.root {
+	width: 100%;
+	clear: both;
+}
+
+.resourceShell {
+	display: inline-block;
+	width: 30%;
+	padding: 0 1% 0 1%;
+}
+
+.resourceContainer {
+	border: 1px solid rgba(0,0,0,1);
+	height: 20px;
+	width: 100%;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.resourceFill {
+	position: absolute;
+	height: 100%;
+	width: 0%;
+	background-color: rgba(128, 128, 128, .4);
+	z-index: -1;
+}
+
+.resourceAmount {
+	text-align: center;
+	font-weight: 900;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.resourceLabel {
+	display: inline-block;
+	width: 100%;
+}
+
+.rateLabel {
+	float: right;
+	font-size: 10px;
+}
+
+.resourceControls div {
+	font-size: 12px;
+	margin-top: 7px;
+	float: right;
+}
+
+marquee {
+	width: 70%;
+}
+
+.shell{
+	clear:both;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.ship {
+	padding-left: 200px; /* leftColumn width */
+	padding-right: 400px; /* rightColumn width */
+}
+
+.ship .column {
+	position: relative;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.shipCenter {
+	width: 95%;
+	margin-left:5%;
+}
+
+.shipLeft {
+	width: 200px; /* leftColumn width */
+	right: 200px; /* leftColumn width */
+	margin-left: -100%;
+	background-color: rgba(180, 180, 180, 0.4);
+	border-radius: 8px;
+}
+
+ul {
+	font-size: 14px;
+	list-style-type: none;
+	margin-left: 10px;
+	padding-left: 0;
+}
+
+.shipLeft td {
+  font-weight: normal;
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+.shipLeft td button {
+	font-size: 12px;
+}
+
+.shipRight {
+	width: 400px; /* rightColumn width */
+	margin-right: -400px; /* rightColumn width */
+	background-color: 0; /* rgba(0, 0, 0, 1); Removed for debug */
+	border-radius: 5px;
+	cursor: crosshair;
+	color: rgba(16, 16, 16, 0.5);
+}
+
+.footer {
+	clear: both;
+}
+.gridTable {
+	float:right;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+.gridTable td {
+	height: 20px;
+	width: 12px;
+	margin-left: -30px;
+	margin-top: -30px;
+}
+
+.imageContainer {
+	position: relative;
+}
+
+.imageContainer img {
+	position: absolute;
+	height: auto;
+	left:-10;
+	top:0;
+}
+
+.shipImage {
+	position: absolute;
+	height: auto;
+	top: 50%;
+	left: 0;
+	z-index: 1;
+	pointer-events: none;
+}
+
+#facilityShell {
+	visibility: hidden;
+	height: 0px;
+}
+
+#facilityLayout {
+	border: 1px solid black;
+	text-align: center;
+}
+
+hr {
+	height: 2px;
+	border: none;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+hr.innerHr {
+	height: 1px;
+	border: none;
+	background: rgba(0, 0, 0, 0.2);
+	margin: 0 0 0 0;
+}
+
+#statusControlsShell {
+	clear: both;
+	position: relative;
+	bottom: 0;
+	left: 0;
+}
+
+#newShipCost {
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 10px;
+}
+
+.upgradeButton {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.highlightStatus {
+	background-color: rgba(0, 0, 0, 0.4);
+	color: red;
+}
+
+.shipNameplate {
+	font-family: Impact, Charcoal, sans-serif;
+	font-weight: normal;
+	width: 80%;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	text-shadow: 0 0 2px rgba(255, 255, 255, 1);
+}
+
+.expando, .shipNameplate {
+	display: inline-block;
+}
+
+.statusTitle {
+	margin-left: 5px;
+	margin-top:7px;
+}
+
+.specItem.label {
+	float: left;
+	margin-right: 4px;
+}
+
+.specItem.value {
+	float: right;
+}
