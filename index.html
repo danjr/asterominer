@@ -1,0 +1,119 @@
+<!- DOCTYPE html>
+<html>
+	<head>
+		<script src="asterominer.js"></script>
+		<script src="ships.js"></script>
+		<script src="market.js"></script>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+		<title>Asterominer</title>
+	</head>
+	<body>
+		<div class="root" id="header">
+		<h1>Asterominer v0.0.3(pre-alpha) FOR TESTING PURPOSES ONLY!</h1>
+		<hr>
+		</div>
+		<div class="root" id="body">
+			<div id="status">
+				<div class="resourceShell" id="creditsShell">
+					<div class="resourceLabel" id="creditsLabel">
+						Credits
+						<div class="rateLabel" id="creditsRate">
+							0 Cr/s
+						</div>
+					</div>
+					<div class="resourceContainer" id="creditsContainer">
+						<div class="resourceAmount" id="creditsAmount">
+							100000
+						</div>
+						<div class="resourceFill" id="creditsFill">
+
+						</div>
+					</div>
+					<div class="resourceControls" id="creditsControls">
+						<button style="visibility:hidden;">Buy</button><button style="visibility:hidden;">Sell</button>
+						<div></div>
+						<marquee style="visibility:hidden; width:0;" onMouseOver="this.stop();" onMouseOut="this.start();">Buy: <strong>10c</strong>; Sell: <strong>9c</strong>; Market Trend: <strong>Stable</strong>; </marquee>
+					</div>
+				</div>
+				<div class="resourceShell" id="oreShell">
+					<div class="resourceLabel" id="oreLabel">
+						Ore
+						<div class="rateLabel" id="oreRate">
+							0 O/s
+						</div>
+					</div>
+					<div class="resourceContainer" id="oreContainer">
+						<div class="resourceAmount" id="oreAmount">
+							0
+						</div>
+						<div class="resourceFill" id="oreFill">
+
+						</div>
+					</div>
+					<div class="resourceControls" id="creditsControls">
+						<button id="buyOre" onClick="buyOre(1)">Buy</button><button id="sellOre" disabled=true onClick="sellOre(1)">Sell</button>
+						<div id="oreValue">Current Valuation: 50c</div>
+						<marquee style="visibility:hidden; width:0;" onMouseOver="this.stop();" onMouseOut="this.start();">Buy: <strong>10c</strong>; Sell: <strong>9c</strong>; Market Trend: <strong>Stable</strong>; </marquee>
+					</div>
+				</div>
+				<div class="resourceShell" id="materialShell">
+					<div class="resourceLabel" id="materialLabel">
+						Material
+						<div class="rateLabel" id="materialRate">
+							0 M/s
+						</div>
+					</div>
+					<div class="resourceContainer" id="materialContainer">
+						<div class="resourceAmount" id="materialAmount">
+							0
+						</div>
+						<div class="resourceFill" id="materialFill">
+
+						</div>
+					</div>
+					<div class="resourceControls" id="materialControls">
+						<button id="buyMaterial" onClick="">Buy</button><button onClick="" id="sellMaterial" disabled=true>Sell</button>
+						<div id="materialValue">Current Valuation: 0c</div>						
+						<marquee style="visibility:hidden; width:0;" onMouseOver="this.stop();" onMouseOut="this.start();">Buy: <strong>10c</strong>; Sell: <strong>9c</strong>; Market Trend: <strong>Stable</strong>; </marquee>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div id="facility">
+			<h3>Facility - Coming Soon</h3>
+				<div class="shell" id="facilityShell">
+					<table id="facilityLayout">
+						<tr>
+							<td><button id="purchaseBuildingA1">&loz;</button></td><td><button id="purchaseBuildingB1">&loz;</button></td><td><button id="purchaseBuildingC1">&loz;</button></td>
+						<tr>
+							<td><button id="purchaseBuildingA1">&loz;</button></td><td>&diams;</td><td><button id="purchaseBuildingA1">&loz;</button></td>
+						<tr>
+							<td><button id="purchaseBuildingA1">&loz;</button></td><td><button id="purchaseBuildingA1">&loz;</button></td><td><button id="purchaseBuildingA1">&loz;</button></td>
+					</table>
+				</div>			
+			</div>
+			<hr>
+			<h3><span id="fleetSize">Fleet: 0 ships</span></h3>
+			<div id="ships">
+				<div class="shell" id="shipControls">
+				<button onClick="ships.newShip()" id="purchaseShip">Purchase Ship</button><div id="newShipCost"></div>
+				<hr class="innerHr">
+				</div>
+				<div class="shell" id="shipsShell">
+					<div class="ship" id="ship-template-">
+						<div class="column shipCenter">
+						</div>
+						<div class="column shipLeft">
+						</div>
+						<div class="column shipRight">
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="root" id="footer">
+			<hr>
+			<h2>Footer</h2>
+		</div>
+	</body>
+</html>
